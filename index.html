@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Цифровая платформа о достижениях и перспективах российской космонавтики. История, современные проекты, карьера в космической отрасли.">
+    <meta name="theme-color" content="#03030a">
+    <title>Космос.Rus — Цифровая платформа</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="logo-composite">
+                <img src="/static/img/Vector.svg" class="trace-base" id="tail" alt="Blue Trace">
+                <img src="/static/img/Vector2.svg" class="star-on-top" id="star" alt="Red Star">
+            </div>
+            <h1 class="loader-title">КОСМОС<span>.RUS</span></h1>
+            <div class="progress-bar-container">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="loader-subtitle">Поехали!</p>
+        </div>
+    </div>
+
+    <nav class="orbit-menu-container">
+        <div class="menu-center" id="menuToggle">
+            <div class="radar-circle"></div>
+            <div class="radar-dot"></div>
+            <span class="menu-label">ЦУП</span>
+        </div>
+        <ul class="orbit-items" id="orbitItems">
+            <li style="--i:1;"><a href="#history" data-tooltip="История"><span>01</span></a></li>
+            <li style="--i:2;"><a href="#projects" data-tooltip="Проекты"><span>02</span></a></li>
+            <li style="--i:3;"><a href="#career" data-tooltip="Карьера"><span>03</span></a></li>
+            <li style="--i:4;"><a href="#profile" data-tooltip="Профиль"><span>04</span></a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <div class="stars-bg"></div>
+        <div class="wrapper">
+            <header class="hero">
+                <div class="hero-badge">РОСКОСМОС • 2026</div>
+                <h2>Россия — страна великих свершений</h2>
+                <p>От первого спутника до будущих лунных миссий. Более 60 лет в авангарде космической эры.</p>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number">1957</span><span class="stat-label">Первый спутник</span></div>
+                    <div class="stat"><span class="stat-number">1961</span><span class="stat-label">Первый человек в космосе</span></div>
+                    <div class="stat"><span class="stat-number">2026</span><span class="stat-label">Новые горизонты</span></div>
+                </div>
+            </header>
+
+            <section id="history" class="content-sec">
+                <h3>История побед</h3>
+                <div class="glass-card timeline-card">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1957</div>
+                            <div class="timeline-desc">Запуск первого искусственного спутника Земли</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1961</div>
+                            <div class="timeline-desc">Первый полёт человека в космос — Юрий Гагарин</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1965</div>
+                            <div class="timeline-desc">Первый выход человека в открытый космос — Алексей Леонов</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1971</div>
+                            <div class="timeline-desc">Первая орбитальная станция «Салют»</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1998</div>
+                            <div class="timeline-desc">Запуск модуля «Заря» — начало МКС</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="content-sec">
+                <h3>Современные проекты</h3>
+                <div class="projects-grid">
+                    <div class="card project-card">
+                        <div class="card-icon"><i class="bi bi-moon-stars"></i></div>
+                        <h4>Луна-26</h4>
+                        <p>Орбитальный аппарат для дистанционного исследования Луны и поиска ресурсов.</p>
+                        <span class="card-status">2026 — запуск</span>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                        <h4>Ангара-А5</h4>
+                        <p>Ракета-носитель тяжёлого класса нового поколения для вывода грузов на орбиту.</p>
+                        <span class="card-status">Активная эксплуатация</span>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-icon"><i class="bi bi-satellite"></i></div>
+                        <h4>Спектр-РГ</h4>
+                        <p>Рентгеновская обсерватория для изучения Вселенной в высоких энергиях.</p>
+                        <span class="card-status">В работе с 2019</span>
+                    </div>
+                    <div class="card project-card">
+                        <div class="card-icon"><i class="bi bi-building"></i></div>
+                        <h4>Российская орбитальная станция</h4>
+                        <p>Проект новой национальной орбитальной станции (РОС).</p>
+                        <span class="card-status">Перспективный проект</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="career" class="content-sec">
+                <h3>Карьерный трек</h3>
+                <div class="career-grid">
+                    <div class="glass-card career-card">
+                        <h4><i class="fas fa-graduation-cap"></i> Ведущие вузы</h4>
+                        <ul>
+                            <li>МГТУ им. Н.Э. Баумана</li>
+                            <li>МАИ (Московский авиационный институт)</li>
+                            <li>СПбГУ (Институт наук о Земле)</li>
+                            <li>НИЯУ МИФИ</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card career-card">
+                        <h4><i class="fas fa-user-astronaut"></i> Профессии будущего</h4>
+                        <ul>
+                            <li>Инженер-конструктор КА</li>
+                            <li>Специалист по космической робототехнике</li>
+                            <li>Оператор спутниковых группировок</li>
+                            <li>Космический биолог</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card career-card">
+                        <h4><i class="fas fa-rocket"></i> Стажировки</h4>
+                        <ul>
+                            <li>Госкорпорация «Роскосмос»</li>
+                            <li>Центр подготовки космонавтов</li>
+                            <li>НПО «Энергомаш»</li>
+                            <li>Космический центр «Восточный»</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="profile" class="content-sec">
+                <h3>Личный кабинет</h3>
+                <div class="glass-card profile-card">
+                    <div class="profile-avatar">
+                        <div class="avatar-placeholder"><i class="fas fa-user-astronaut"></i></div>
+                    </div>
+                    <div class="profile-info">
+                        <h4>Гость платформы</h4>
+                        <p>Войдите или зарегистрируйтесь, чтобы получить доступ к:</p>
+                        <ul class="profile-features">
+                            <li><i class="bi bi-bar-chart-steps"></i> Интерактивным курсам по космонавтике</li>
+                            <li><i class="bi bi-star"></i> Персональным рекомендациям по карьере</li>
+                            <li><i class="bi bi-globe2"></i> Виртуальным турам по космодромам</li>
+                        </ul>
+                        <div class="profile-buttons">
+                            <button class="btn-primary" id="loginBtn">Войти</button>
+                            <button class="btn-secondary" id="registerBtn">Регистрация</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>© 2026 Космос.Rus — Цифровая платформа российских космических достижений</p>
+                <p class="footer-links">
+                    <a href="#">О проекте</a> • 
+                    <a href="#">Контакты</a> • 
+                    <a href="#">Политика конфиденциальности</a>
+                </p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
